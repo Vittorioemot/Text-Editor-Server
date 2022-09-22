@@ -26,7 +26,7 @@ module.exports = () => {
         swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
-      
+
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -63,13 +63,11 @@ module.exports = () => {
               plugins: [
                 "@babel/plugin-proposal-object-rest-spread",
                 "@babel/transform-runtime",
-  
-    ],
-
-    module: {
-      rules: [
-        
-      ],
-    },
-  };
-};
+                ],
+               },
+              },
+             }
+            ],
+           },
+          };
+        };
